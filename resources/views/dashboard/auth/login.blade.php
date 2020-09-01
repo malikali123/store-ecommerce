@@ -10,7 +10,7 @@
                     <div class="card-header border-0">
                         <div class="card-title text-center">
                             <div class="p-1">
-                                <img src="{{asset('assets/front/images/logo.png')}}" alt="LOGO"/>
+                                <img src="{{asset('assets\admin\images\logo\logo.png')}}" alt="LOGO"/>
 
                             </div>
                         </div>
@@ -18,10 +18,10 @@
                             <span>الدخول للوحة التحكم </span>
                         </h6>
                     </div>
-                    
+
                     @include('dashboard.includes.alerts.errors')
                     @include('dashboard.includes.alerts.success')
-                    
+
                     <div class="card-content">
                         <div class="card-body">
                             <form class="form-horizontal form-simple" action="{{route('admin.post.login')}}" method="post"
@@ -45,12 +45,12 @@
                                     <div class="form-control-position">
                                         <i class="la la-key"></i>
                                     </div>
-                                   
+
                                     @error('password')
                                     <span class="text-danger"> {{$message}} </span>
                                       @enderror
 
-                                   
+
                                 </fieldset>
                                 <div class="form-group row">
                                     <div class="col-md-6 col-12 text-center text-md-left">
